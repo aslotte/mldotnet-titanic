@@ -37,3 +37,6 @@ TitanicPredictions/obj/TitanicPredictions.Train.csproj.nuget.dgspec.json
 TitanicPredictions/obj/TitanicPredictions.Train.csproj.nuget.g.props
 TitanicPredictions/obj/TitanicPredictions.Train.csproj.nuget.g.targets
 TitanicPredictions/.vs/titanicPredictions/v16/Server/sqlite3/db.lock
+TitanicPredictions/obj/Debug/netcoreapp2.1/TitanicPredictions.Train.csproj.FileListAbsolute.txt
+TitanicPredictions/obj/Debug/netcoreapp2.1/TitanicPredictions.Train.dll
+TitanicPredictions/obj/Debug/netcoreapp2.1/TitanicPredictions.Train.pdb
