@@ -6,9 +6,13 @@ on:
   pull_request:
     branches: [ master ]
 
+defaults:
+  run:
+    shell: bash
+    working-directory: TitanicPredictions
+    
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -23,6 +27,3 @@ jobs:
     - name: Build
       working-directory: ../TitanicPredictions
       run: dotnet build --configuration Release --no-restore
-    - name: Train
-      working-directory: ../../../TitanicPredictions
-      run: dotnet run --no-restore --verbosity normal
