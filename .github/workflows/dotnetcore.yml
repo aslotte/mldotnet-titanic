@@ -5,11 +5,6 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
-
-defaults:
-  run:
-    shell: bash
-    working-directory: ./TitanicPredictions
     
 jobs:
   build:
@@ -22,8 +17,6 @@ jobs:
       with:
         dotnet-version: 3.1.101
     - name: Install dependencies
-      working-directory: ../TitanicPredictions
-      run: dotnet restore
+      run: dotnet restore ../../TitanicPredictions/TitanicPredictions.sln
     - name: Build
-      working-directory: ../TitanicPredictions
-      run: dotnet build --configuration Release --no-restore
+      run: dotnet build ../../TitanicPredictions/TitanicPredictions.sln --configuration Release --no-restore
