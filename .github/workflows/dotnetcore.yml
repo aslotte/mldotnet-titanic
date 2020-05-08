@@ -17,6 +17,6 @@ jobs:
       with:
         dotnet-version: 3.1.101
     - name: Install dependencies
-      run: dotnet restore TitanicPredictions
+      run: dotnet restore TitanicPredictions/TitanicPredictions.sln
     - name: Build
-      run: dotnet build TitanicPredictions --configuration Release --no-restore
+      run: dotnet build TitanicPredictions/TitanicPredictions.sln --configuration Release --no-restore
