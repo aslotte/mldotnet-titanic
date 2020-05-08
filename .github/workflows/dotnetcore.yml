@@ -18,11 +18,11 @@ jobs:
       with:
         dotnet-version: 3.1.101
     - name: Install dependencies
-      working-directory: /TitanicPredictions
+      working-directory: ../../TitanicPredictions
       run: dotnet restore
     - name: Build
-      working-directory: /TitanicPredictions
+      working-directory: ../../TitanicPredictions
       run: dotnet build --configuration Release --no-restore
     - name: Train
-      working-directory: /TitanicPredictions
+      working-directory: ../../TitanicPredictions
       run: dotnet run --no-restore --verbosity normal
